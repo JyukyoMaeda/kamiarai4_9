@@ -374,7 +374,7 @@
 			.flexItem{
 				@include mq(sp){
 					width: 48%;
-					margin: 0 3px;
+					margin: 0 3px !important;
 				}
 				@include mq(tb){
 					width: 25%;

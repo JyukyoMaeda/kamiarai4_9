@@ -82,6 +82,11 @@
             @include mq(tb){
                 font-size: clamp(10px, 1.8vw, 24px);
             }
+            &.-s12{
+                @include mq(sp){
+                    font-size: 12px;
+                }
+            }
             &.-s14{
                 @include mq(sp){
                     font-size: 14px;
@@ -277,11 +282,14 @@
                 display: block;
                 &::after{
                     content: "REQUEST";
-                    font-size: .65vw;
+                    font-size: 11px;
                     position: absolute;
                     top: 70%;
                     left: 50%;
                     transform: translate(-50%,-50%);
+                    @include mq(tb){
+                        font-size: .65vw;
+                    }
                 }
             }
         }
@@ -294,11 +302,14 @@
             display: block;
             &::after{
                 content: "RESERVE";
-                font-size: .65vw;
+                font-size: 11px;
                 position: absolute;
                 top: 70%;
                 left: 50%;
                 transform: translate(-50%,-50%);
+                @include mq(tb){
+                    font-size: .65vw;
+                }
             }
         }
     }
@@ -433,9 +444,10 @@
                 bottom: -60%;
                 left: 0%;
 
-                font-size: 1vw;
+                font-size: 11px;
                 @include mq(tb){
                     bottom: -40%;
+                    font-size: 1vw;
                 }
             }
         }
@@ -477,15 +489,16 @@
             top: -50%;
             left: -6%;
             width: 110%;
-            font-size: 1vw;
-            // width: 110%;
+            font-size: 11px;
+            width: 120%;
             @include mq(sp){
-                width: 110%;
                 transform: scale(.7);
             }
             @include mq(tb){
                 top: -30%;
                 left: -8%;
+                width: 110%;
+                font-size: 1vw;
             }
             @include mq(pc){
                 top: -33%;
@@ -500,9 +513,9 @@
         &::after{
             content: "・・・・";
             position: absolute;
-            top: -46%;
+            top: -85%;
             left: 17.6%;
-            font-size: 7.3vw;
+            font-size: 7.7vw;
             @include mq(tb){
                 top: -54%;
                 left: 18%;

@@ -357,6 +357,10 @@ img {
   margin-left: -4%;
 }
 
+.l-pdl_1 {
+  padding-left: 1vh !important;
+}
+
 #pc-right-contactArea {
   position: fixed;
   top: 20%;
@@ -1052,7 +1056,7 @@ img {
 @media screen and (max-width: 768px) {
   .l-flex--area .l-flex--contents.-f-PABM-btn .flexItem {
     width: 48%;
-    margin: 0 3px;
+    margin: 0 3px !important;
   }
 }
 @media screen and (min-width: 767px) {
@@ -2284,6 +2288,11 @@ img {
   }
 }
 @media screen and (max-width: 768px) {
+  .l-text.-sizeL.-s12 {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
   .l-text.-sizeL.-s14 {
     font-size: 14px;
   }
@@ -2483,11 +2492,16 @@ img {
 }
 .l-text.-REQUEST a span::after {
   content: "REQUEST";
-  font-size: 0.65vw;
+  font-size: 11px;
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 767px) {
+  .l-text.-REQUEST a span::after {
+    font-size: 0.65vw;
+  }
 }
 .l-text.-RESERVE {
   background: #6D0000;
@@ -2498,11 +2512,16 @@ img {
 }
 .l-text.-RESERVE span::after {
   content: "RESERVE";
-  font-size: 0.65vw;
+  font-size: 11px;
   position: absolute;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 767px) {
+  .l-text.-RESERVE span::after {
+    font-size: 0.65vw;
+  }
 }
 .l-text.-TOP {
   position: relative;
@@ -2627,11 +2646,12 @@ img {
   position: absolute;
   bottom: -60%;
   left: 0%;
-  font-size: 1vw;
+  font-size: 11px;
 }
 @media screen and (min-width: 767px) {
   .l-text .w-auto.-komezirushi::after {
     bottom: -40%;
+    font-size: 1vw;
   }
 }
 .l-text.ikebukuro-sen {
@@ -2673,11 +2693,11 @@ img {
   top: -50%;
   left: -6%;
   width: 110%;
-  font-size: 1vw;
+  font-size: 11px;
+  width: 120%;
 }
 @media screen and (max-width: 768px) {
   .l-text.ikebukuro-shinzyuku-sen::after {
-    width: 110%;
     transform: scale(0.7);
   }
 }
@@ -2685,6 +2705,8 @@ img {
   .l-text.ikebukuro-shinzyuku-sen::after {
     top: -30%;
     left: -8%;
+    width: 110%;
+    font-size: 1vw;
   }
 }
 @media screen and (min-width: 1600px) {
@@ -2700,9 +2722,9 @@ img {
 .l-text.dots::after {
   content: "・・・・";
   position: absolute;
-  top: -46%;
+  top: -85%;
   left: 17.6%;
-  font-size: 7.3vw;
+  font-size: 7.7vw;
 }
 @media screen and (min-width: 767px) {
   .l-text.dots::after {
