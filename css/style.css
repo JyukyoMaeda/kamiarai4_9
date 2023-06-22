@@ -2383,6 +2383,16 @@ img {
     font-size: 3.5rem;
   }
 }
+@media screen and (min-width: 767px) {
+  .l-text.-size3L.-v02 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .l-text.-size3L.-v02 {
+    font-size: 2.5rem;
+  }
+}
 .l-text.-size3L_2 {
   font-size: 24px;
 }
