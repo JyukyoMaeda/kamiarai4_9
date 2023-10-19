@@ -284,11 +284,11 @@ img {
 }
 
 .l-mgb_15 {
-  margin-bottom: 8vh;
+  margin-bottom: 8vh !important;
 }
 @media screen and (min-width: 767px) {
   .l-mgb_15 {
-    margin-bottom: 15vh;
+    margin-bottom: 15vh !important;
   }
 }
 
